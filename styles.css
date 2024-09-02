@@ -1,0 +1,22 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+.topbar {
+    background-color: #00a0d2;
+    height: 52px;
+}
+
+.logo-container {
+    margin: 0 auto;
+    width: 350px;
+}
+
+.logo-container img {
+    width: 350px;
+}

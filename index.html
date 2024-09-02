@@ -11,18 +11,57 @@
 <body>
     <div class="topbar"></div>
     <div class="logo-container">
-        <img src="logo.png" />
+        <img src="logo.png" alt="Logo de Pulkra">
     </div>
     <div class="menu">
-        <span>Quienes somos</span>
-        <span>Servicios</span>
-        <span>Contactos</span>
+        <a href="#quienes-somos">Quienes somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contactos</a>
     </div>
-    <div class="section-quienes-somos"></div>
-    <div class="section-servicios"></div>
-    <div class="section-contacto"></div>
-    
+    <div id="quienes-somos" class="section-quienes-somos">
+        <h2>Quienes Somos</h2>
+        <p>En Pulkra, nos especializamos en ofrecer servicios de limpieza de alta calidad para mantener tu entorno en
+            perfectas condiciones. Nuestro equipo está altamente capacitado y utiliza productos de limpieza de última
+            generación.</p>
+        <img src="quienes-somos.jpg" alt="Quienes Somos">
+    </div>
+    <div id="servicios" class="section-servicios">
+        <h2>Servicios</h2>
+        <div class="service">
+            <h3>Limpieza Residencial</h3>
+            <p>Ofrecemos servicios de limpieza para tu hogar, asegurando un ambiente fresco y saludable.</p>
+        </div>
+        <div class="service">
+            <h3>Limpieza Comercial</h3>
+            <p>Servicios de limpieza para oficinas y negocios, con atención a los detalles para un entorno de trabajo
+                limpio y profesional.</p>
+        </div>
+        <div class="service">
+            <h3>Limpieza de Post-Obra</h3>
+            <p>Especialistas en limpieza profunda después de obras y remodelaciones para dejar todo impecable.</p>
+        </div>
+    </div>
+    <div id="contacto" class="section-contacto">
+        <h2>Contacto</h2>
+        <p>Para consultas y presupuestos, contáctanos a través de:</p>
+        <ul>
+            <li>Teléfono: 123-456-7890</li>
+            <li>Email: info@pulkra.com</li>
+            <li>Dirección: Calle Ejemplo 123, Ciudad, País</li>
+        </ul>
+        <form action="enviar-formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 
 </html>
